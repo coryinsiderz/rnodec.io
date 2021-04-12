@@ -1,3 +1,13 @@
++++
+title = "Get Chaindata"
+weight = 25
+draft = false
+description = "How to download quicksync chain"
+bref = "It is no fun to wait for a node to catch up to the latest block height from scratch.  Fortunately, the folks at chainlayer.io provide quicksync files to skip the line and catch up much quicker."
+
++++
+
+
 # Download chain quick sync file
 
 Thank you to the chainlayer team for this...
