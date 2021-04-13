@@ -1,12 +1,16 @@
 +++
-title = "Terraform-Validator-01: Get Chaindata"
-description = "How to download quicksync chain"
-date = {{ .Date }}
-weight = 20
+title = "Get Chaindata"
+weight = 25
 draft = false
+description = "How to download quicksync chain"
+bref = "It is no fun to wait for a node to catch up to the latest block height from scratch.  Fortunately, the folks at chainlayer.io provide quicksync files to skip the line and catch up much quicker."
+
 +++
 
-It is no fun to wait for a node to catch up to the latest block height from scratch.  Fortunately, the folks at chainlayer.io provide quicksync files to skip the line and catch up much quicker.
+
+# Download chain quick sync file
+
+Thank you to the chainlayer team for this...
 
 The overall approach here is:
 1. create a gcp instance with a large disk attached

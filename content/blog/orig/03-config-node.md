@@ -1,10 +1,5 @@
-+++
-title = "Terraform-Validator-03: Create Full Node"
-description = "How to configure and run a terraform full node"
-date = {{ .Date }}
-weight = 20
-draft = false
-+++
+
+# Configure and Run a Full Node
 
 Whether this machine is a Validator or just a sentry, the setup is mostly common.
 

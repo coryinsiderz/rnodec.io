@@ -1,12 +1,4 @@
-+++
-title = "Terraform-Validator-02: Infrastructure"
-description = "Setup required for infrastructure-as-code"
-date = {{ .Date }}
-weight = 20
-draft = false
-+++
-
-
+# Terraform Setup
 
 `terraform` (not to be confused with Terraform Labs) is a great way to manage infrastructure on the cloud. 
 

@@ -1,11 +1,4 @@
-+++
-title = "Terraform-Validator-04: Run Full Node"
-description = "Fire up the terra engines"
-date = {{ .Date }}
-weight = 20
-draft = false
-+++
-
+# Run Validator
 
 You should already be `terrauser` here... (`sudo su - terrauser`)
 

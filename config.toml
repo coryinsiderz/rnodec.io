@@ -2,19 +2,16 @@ baseURL = "/"
 languageCode = "en-us"
 title = "RnodeC"
 theme = "kube"
-description = "Kube is a professional  and a responsive Hugo theme for developers and designers that offers a documentation section mixed with a landing page and a blog"
+description = "RnodeC: We are professional node operators"
 Paginate = 4
 [Params]
   RSSLink = "/index.xml"
-  author = "newpixcom" # add your company name
+  author = "RnodeC" # add your company name
   github = "github.com/RnodeC"
   twitter = "@RnodeC"
   email = "support@Rnodec.io"
 
-[[menu.main]]
-    name = "Docs"
-    weight = -100
-    url = "/docs/"
+
 [[menu.main]]
     name = "Blog"
     weight = -100

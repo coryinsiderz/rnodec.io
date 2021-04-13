@@ -1,10 +1,4 @@
-+++
-title = "Terraform-Validator06: Oracle Server"
-description = "Configure and run the oracle daemons"
-date = {{ .Date }}
-weight = 20
-draft = false
-+++
+# Oracle Feeder Configuration
 
 - These snippets are intended for reference purposes, not to be copy and pasted without reading, understanding, and editing to suit your environment
 - The assumption here is that this is a standalone oracle server that will run both the price feeder and the price server daemons
@@ -60,6 +54,7 @@ sudo su - oracleuser
 
 ## Install nodejs
 ```bash
+echo; echo "[INFO] Installing node"
 VERSION=v14.16.0
 DISTRO=linux-x64
 sudo mkdir -p /usr/local/lib/nodejs
@@ -81,15 +76,13 @@ pushd oracle-feeder/feeder
 npm install
 npm start update-key
 # follow prompts to enter your local encryption key and bip39 mnemonic associated with your oracle wallet
-```
-```bash
 popd
 ```
 
 ## Configure and prep price-server
 ```bash
 pushd oracle-feeder/price-server
-gcloud secrets versions access 2 --secret=$SECRET_NAME > config/default.js # this default.js has my api key in it.. if you don't have this, just copy the sample provided, and visit one of the providers mentioned in order to get your own api key
+gcloud secrets versions access 1 --secret=$SECRET_NAME > config/default.js # this default.js has my api key in it.. if you don't have this, just copy the sample provided, and visit one of the providers mentioned in order to get your own api key
 npm install
 popd
 ```
@@ -197,11 +190,11 @@ chmod +x /home/oracleuser/oracle-feeder/feeder/run-price-feeder.sh
 ## Update price feeder /etc/hosts with validator hostname
 ```bash
 sudo bash -c "cat >> /etc/hosts << EOF
-$VALIDATOR_IP validator
+$VALIDATOR_PRIVATE_IP validator
 
 EOF"
 ```
-* `VALIDATOR_IP`: ip that this node can reach validator at (should be a private ip)
+* `VALIDATOR_PRIVATE_IP`: ip that this node can reach validator at
 
 
 ## Delegate permission
@@ -221,7 +214,7 @@ terracli tx oracle set-feeder $FEEDER_ADDRESS --from=$VALIDATOR --chain-id $NETW
 This feeder wallet needs Luna to pay the gas for all his transactions.  Lots and lots of transaction.  Very miniscule gas fees, but you don't want it to run dry or you will start missing votes!
 ```bash
 terracli tx send $FROM_ADDRESS $TO_ADDRESS $AMOUNT --fees 30000uluna
-terracli tx market swap $AMOUNT ukrw --from=$WALLET --fees 30000uluna
+terracli tx market swap $AMOUNT ukrw --from=$WALLET
 ```
 * `FROM_ADDRESS`: if you are on your client machine where this wallet lives, this can just be the public address of the wallet with the funds
 * `TO_ADDRESS`: if you are on your client machine where this wallet lives, this can just be the public address of the wallet for the funds
@@ -230,15 +223,11 @@ terracli tx market swap $AMOUNT ukrw --from=$WALLET --fees 30000uluna
 
 
 ## Start services
-
-These commands would all be over on the oracle machine
-
-
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable price-server
-sudo systemctl enable price-feeder
 sudo systemctl start price-server
+sudo systemctl enable price-feeder
 sudo systemctl start price-feeder
 ```
 And check on them...
