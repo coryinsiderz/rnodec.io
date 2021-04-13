@@ -1,7 +1,7 @@
 +++
 title = "Terraform-Validator-01: Get Chaindata"
 description = "How to download quicksync chain"
-date = 04-07-2021
+date = 2021-04-07
 weight = 20
 draft = false
 +++
