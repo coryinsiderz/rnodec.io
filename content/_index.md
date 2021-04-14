@@ -1,6 +1,6 @@
 +++
-description = "RnodeC"
-title = "Operating nodes since 2021"
+description = "Operating nodes since 2021"
+title = "RnodeC"
 draft = false
 
 +++
