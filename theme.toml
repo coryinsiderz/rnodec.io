@@ -2,7 +2,7 @@
 # See https://github.com/spf13/hugoThemes#themetoml for an example
 
 name = "RnodeC"
-license = "MIT"
+license = "Dantree"
 licenselink = "https://github.com/jeblister/kube/master/LICENSE.md"
 description = "RnodeC is a professional and responsive node operation service"
 homepage = "https://rnodec.io/"
