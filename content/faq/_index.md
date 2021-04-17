@@ -20,8 +20,8 @@ More to come!
 
 ## How can I support RnodeC?
 
-Supporting RnodeC is supporting yourself, and it is supporting the projects that we are involved in.  But to answer your question, staking your tokens ($LUNA, for example) to our validator means more rewards for us.  The staking choice for you is more or less irrelevant.  You want to stake with a validator that you can trust to consistently keep their node online and operational is about all.  And from that perspective, we got you!
+Supporting RnodeC is supporting yourself, and it is supporting the projects that we are involved in.  But to answer your question, staking your tokens ($LUNA, for example) to our validator means more rewards for us (validator nodes share the pool of transaction fees in exchange for their support of the network).  The staking choice for you is more or less irrelevant.  You want to stake with a validator that you can trust to consistently keep their node online and operational is about all.  And from that perspective, we got you!
 
 ## What is Staking?
 
-"Staking" cryptocurrency is the alternative to just idle-y sitting on them, waiting for the number to go up.  It is a low-risk path to earn passive on interest on your investment.    
+"Staking" cryptocurrency is the alternative to just idle-y sitting on them, waiting for the number to go up.  It is a low-risk path to earn passive interest on your investment.    
