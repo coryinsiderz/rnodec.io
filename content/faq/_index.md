@@ -10,7 +10,7 @@ We fight the good fight by operating nodes in blockchains that we believe in.  A
 
 ## Why does RnodeC do it?
 
-We believe in the dream.  What is the dream?  Well, it is subjective.  To us, the dream is freedom.  What is freedom?  Well, that too is subjective.  To us, freedom is friends, family and building.  Not meetings, presentations, and emails.    
+We believe in the dream.  What is the dream?  Well, it is subjective.  To us, the dream is freedom.  What is freedom?  Well, that too is subjective.  To us, freedom is friends, family and building.     
 
 ## Which Blockchains does RnodeC support?
 
