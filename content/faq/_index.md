@@ -20,8 +20,15 @@ More to come!
 
 ## How can I support RnodeC?
 
-Supporting RnodeC is supporting yourself, and it is supporting the projects that we are involved in.  But to answer your question, staking your tokens ($LUNA, for example) to our validator means more rewards for us (validator nodes share the pool of transaction fees in exchange for their support of the network).  The staking choice for you is more or less irrelevant.  You want to stake with a validator that you can trust to consistently keep their node online and operational is about all.  And from that perspective, we got you!
+By staking your tokens (`$LUNA`, for example) to the RnodeC validator.  
+
+Staking your tokens ($LUNA, for example) to our validator means more rewards for us.  Validator nodes share the pool of transaction fees in exchange for their support of the network.  
+
+Staking your tokens to RnodeC is indeed supporting us, but really it is supporting yourself (earning a yield on your investment) and it is supporting the projects that we are involved in (such as Terra).  
 
 ## What is Staking?
 
-"Staking" cryptocurrency is the alternative to just idle-y sitting on them, waiting for the number to go up.  It is a low-risk path to earn passive interest on your investment.    
+"Staking" cryptocurrency is the alternative to just idle-y sitting on them and waiting for the number to go up.  It is a low-risk path to earn passive interest on your investment.  (there are high risk paths too!  Feel free to reach out if you'd like to discuss.)
+
+Frankly, it makes no difference to you which node you stake your tokens to.  Considerations involved in that decision are first and foremost "do you trust the validator to stay online and behave well."  Decentralized networks have mechanisms in place to penalize validators who misbehave whether intentionally or unintentionally.  And these mechanisms impact all stakers as well, not just the validator.  So, choose a validator you can trust.  
+
