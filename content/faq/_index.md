@@ -8,9 +8,6 @@ description = "Asked and answered"
 
 We fight the good fight by operating nodes in blockchains that we believe in.  All decentralized systems require decentralized communities to make the network unbreakable.  We are here to do our duty.
 
-## Why does RnodeC do it?
-
-We believe in the dream.  What is the dream?  Well, it is subjective.  To us, the dream is freedom.  What is freedom?  Well, that too is subjective.  To us, freedom is friends, family and building.     
 
 ## Which Blockchains does RnodeC support?
 
@@ -22,7 +19,7 @@ More to come!
 
 By staking your tokens (`$LUNA`, for example) to the RnodeC validator.  
 
-Staking your tokens ($LUNA, for example) to our validator means more rewards for us.  Validator nodes share the pool of transaction fees in exchange for their support of the network.  
+Staking your tokens to our validator means more rewards for us.  Validator nodes share the pool of transaction fees in exchange for their support of the network.  
 
 Staking your tokens to RnodeC is indeed supporting us, but really it is supporting yourself (earning a yield on your investment) and it is supporting the projects that we are involved in (such as Terra).  
 
