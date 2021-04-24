@@ -32,8 +32,8 @@ wget -q $GENESISFILE -O .terrad/config/genesis.json
 rm -f .terrad/config/addrbook.json
 wget -q $ADDRBOOK -O .terrad/config/addrbook.json
 ```
-> Find mainnet files here:  https://github.com/terra-project/mainnet
-> Find testnet files here:  https://github.com/terra-project/testnet
+* Find mainnet files here:  https://github.com/terra-project/mainnet  
+* Find testnet files here:  https://github.com/terra-project/testnet
 
 
 ## IF THIS IS A VALIDATOR...
@@ -46,12 +46,14 @@ pex = false
 ```
 persistent_peers = <list of sentries>
 ```
-> The format for a "peer" is `<nodeid>@<ip>:<port>`.  `nodeid` can be found per node by running `terrad tendermint show-node-id`
+* The format for a "peer" is `<nodeid>@<ip>:<port>`.  `nodeid` can be found per node by running `terrad tendermint show-node-id`  
+
 ```
 addr_book_strict = false
 ```
 
-Here are the configuration changes to `~/.terrad/config/app.toml` that need to be set for the validator:
+Here are the configuration changes to `~/.terrad/config/app.toml` that need to be set for the validator:  
+
 MAINNET GAS:
 ```
 minimum-gas-prices = "0.01133uluna,0.15uusd,0.104938usdr,169.77ukrw,428.571umnt,0.125ueur,0.98ucny,16.37ujpy,0.11ugbp,10.88uinr,0.19ucad,0.14uchf,0.19uaud,0.2usgd,4.62uthb"
@@ -74,21 +76,24 @@ pex = true
 ```
 persistent_peers = <validator node, optionally other sentry nodes>
 ```
-> The format for a "peer" is `<nodeid>@<ip>:<port>`.  `nodeid` can be found per node by running `terrad tendermint show-node-id`
+* The format for a "peer" is `<nodeid>@<ip>:<port>`.  `nodeid` can be found per node by running `terrad tendermint show-node-id`  
+
 ```
 addr_book_strict = false
 ```
 ```
 private_peer_ids	<validator node>
 ```
-> The format for a "peer" is `<nodeid>@<ip>:<port>`.  `nodeid` can be found per node by running `terrad tendermint show-node-id`
+* The format for a "peer" is `<nodeid>@<ip>:<port>`.  `nodeid` can be found per node by running `terrad tendermint show-node-id`  
+
 
 MAINNET SEEDS:
 ```
 seeds = "87048bf71526fb92d73733ba3ddb79b7a83ca11e@public-seed.terra.dev:26656,b5205baf1d52b6f91afb0da7d7b33dcebc71755f@public-seed2.terra.dev:26656,5fa582d7c9931e5be8c02069d7b7b243c79d25bf@seed.terra.de-light.io:26656"
 ```
 
-Here are the configuration changes to `~/.terrad/config/app.toml` that need to be set for sentries:
+Here are the configuration changes to `~/.terrad/config/app.toml` that need to be set for sentries:  
+
 MAINNET GAS:
 ```
 minimum-gas-prices = "0.01133uluna,0.15uusd,0.104938usdr,169.77ukrw,428.571umnt,0.125ueur,0.98ucny,16.37ujpy,0.11ugbp,10.88uinr,0.19ucad,0.14uchf,0.19uaud,0.2usgd,4.62uthb"

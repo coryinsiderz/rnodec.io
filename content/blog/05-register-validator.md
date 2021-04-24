@@ -32,6 +32,7 @@ terracli config trust-node true
 
 ## Register Validator
 
+This is how you actually join your node to the network as an official validator.  You submit this special transaction to the network.  It is saying that **this wallet** (`--from`) would like to announce that **this node** (`--pubkey`) is now a validator, and we call ourselves `--moniker`.  
 ```bash
 terracli tx staking create-validator \
 	--pubkey $VALIDATOR_PUBLIC_KEY \

@@ -87,7 +87,7 @@ After=network.target
 [Service]
 Type=simple
 User=terrauser
-ExecStart=/usr/local/bin/terracli rest-server --chain-id=columbus-4 --laddr=tcp://0.0.0.0:1317 --node tcp://localhost:26657 --trust-node=true
+ExecStart=/usr/local/bin/terracli rest-server --chain-id=$NETWORK --laddr=tcp://0.0.0.0:1317 --node tcp://localhost:26657 --trust-node=true
 Restart=on-failure
 RestartSec=5s
 
@@ -98,6 +98,7 @@ WantedBy=multi-user.target
 LimitNOFILE=65535
 EOF"
 ```
+* `NETWORK`: `tequila-0004`, `columbus-4`, etc
 
 ## Prepare daemons for launch
 ```bash

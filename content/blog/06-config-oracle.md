@@ -6,14 +6,17 @@ weight = 20
 draft = false
 +++
 
-- These snippets are intended for reference purposes, not to be copy and pasted without reading, understanding, and editing to suit your environment
-- The assumption here is that this is a standalone oracle server that will run both the price feeder and the price server daemons
 
-Reference: 
-- https://github.com/petes-fan-club/terra-scripts
-- https://github.com/terra-project/oracle-feeder
-- https://docs.terra.money/validator/setup.html#delegate-feeder-consent
 
+## Create oracleuser
+```bash
+sudo useradd -u 88888 -G 1000 oracleuser #supplementary (special gcp) group 1000 gives us sudo
+```
+
+## Become oracleuser
+```bash
+sudo su - oracleuser
+```
 
 ## Create oracle wallet
 Do this from a local client, not this oracle machine.  You want to protect these keys like you would any other.  
@@ -48,15 +51,6 @@ sudo bash -c "cat > /etc/security/limits.d/terrad.conf << EOF
 EOF"
 ```
 
-## Create oracleuser
-```bash
-sudo useradd -u 88888 -G 1000 oracleuser #supplementary (special gcp) group 1000 gives us sudo
-```
-
-## Become oracleuser
-```bash
-sudo su - oracleuser
-```
 
 ## Install nodejs
 ```bash
@@ -165,13 +159,15 @@ bash -c "cat > /home/oracleuser/oracle-feeder/feeder/price-feeder.env << EOF
 
 
 VALIDATOR_ADDRESS=$VALIDATOR_ADDRESS  
-ORACLE_PASS=$ORACLE_PASSWORD
+ORACLE_PASS=$ORACLE_PASS
+NETWORK=$NETWORK
 PATH=/usr/local/lib/nodejs/node-v14.16.0-linux-x64/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin
 
 EOF"
 ```
 * `VALIDATOR_ADDRESS`: this is the `terravaloperxxx` value associated with the validator wallet you will use.  Should be able to find this on the client with `terracli keys show -a --bech val <validator wallet name>`
 * `ORACLE_PASS`: you chose this earlier in your `npm start update-key` command
+* `NETWORK`: `tequila-0004`, `columbus-4`, etc
 
 ## Create price-feeder run script
 ```bash
@@ -184,7 +180,7 @@ npm start vote -- \\
    	--chain-id "${NETWORK}" \\
  	--denoms sdr,krw,usd,mnt,eur,cny,jpy,gbp,inr,cad,chf,hkd,aud,sgd \\
 	--validator "${VALIDATOR_ADDRESS}" \\
-	--password "${ORACLE_PASSWORD}" \\
+	--password "${ORACLE_PASS}" \\
 	--gas-prices 169.77ukrw
 
 EOF"
