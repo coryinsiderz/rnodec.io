@@ -16,7 +16,7 @@ Terra is an exciting young project aimed at bringing crypto to the masses.  To a
 * Peer-to-peer Payments Gateway (Chai)
 * Much more including ETF and Insurance protocols on immediate horizon (Nebula and Ozone)
 
-“Getting in” and “getting out” of the Terra ecosystem should be smooth and frictionless.  Buy `LUNA` to get in, sell `LUNA` to get out `LUNA` is the foundational, native token at the core of all things Terra.  The main unit of account in this ecosystem.  
+“Getting in” and “getting out” of the Terra ecosystem is smooth and frictionless.  Buy `LUNA` to get in, sell `LUNA` to get out.  `LUNA` is the foundational, native token at the core of all things Terra.  The main unit of account in this ecosystem.  
 
 ## Why bother getting in?  What’s the appeal? 
 
