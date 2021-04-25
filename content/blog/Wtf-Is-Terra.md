@@ -16,7 +16,7 @@ Terra is an exciting young project aimed at bringing crypto to the masses.  To a
 * Peer-to-peer Payments Gateway (Chai)
 * Much more
 
-“Getting in” and “getting out” of the Terra ecosystem should be smooth and frictionless.  Buy `LUNA` to get in, sell `LUNA` to get out (`LUNA` is the foundational, native token at the core of all things Terra.  The main unit of account in this ecosystem).  
+“Getting in” and “getting out” of the Terra ecosystem should be smooth and frictionless.  Buy `LUNA` to get in, sell `LUNA` to get out `LUNA` is the foundational, native token at the core of all things Terra.  The main unit of account in this ecosystem.  
 
 ## Why bother getting in?  What’s the appeal? 
 
@@ -24,7 +24,7 @@ Because once you are in, you can do DeFi things.  DeFi things boil down to earni
 
 ## Stablecoin
 
-A stablecoin is a crypto fiat.  In US terms, one `UST` (US Terra) is a digital asset that will always be worth exactly one `USD` (US Dollar).  This is done a variety of ways by competing stablecoin implementations, treasury backed like `USDT` (“tether”) and `USDC`, or, in the case of Terra, algorithmically - done through pre implemented protocols (aka more decentralized).  `DAI` is another very popular stablecoin.  There are tons out there as it is a hot commodity.  In early 2021, Visa announced they will accept `USDC`, opening the floodgates for stablecoins to enter the world’s stage as standard methods of payment. 
+A stablecoin is a crypto fiat.  In US terms, one `UST` (US Terra) is a digital asset that will always be worth exactly one `USD` (US Dollar).  This is done a variety of ways by competing stablecoin implementations, treasury backed like `USDT` (“tether”) and `USDC`, or, in the case of Terra, algorithmically - achieved through pre implemented protocols (aka more decentralized).  `DAI` is another very popular stablecoin.  There are tons out there as it is a hot commodity.  In early 2021, Visa announced they will accept `USDC`, opening the floodgates for stablecoins to enter the world’s stage as standard methods of payment. 
 
 Every transaction in Terra will burn (destroy) either `LUNA` or a particular stablecoin in order to balance out supply/demand and maintain the exact peg to the fiat.  Terra stablecoins so far have an incredible track record of maintaining the peg, even amidst recent industry-wide market volatility.
 
