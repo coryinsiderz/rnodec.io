@@ -8,7 +8,7 @@ draft = false
 
 ## Ok I'm in, now what?
 
-So you [understand and are excited by Terra](https://rnodec.io/blog/what-is-terra), you've got your `LUNA` and/or your `UST` in hand and are ready for the magic to start. There are so many options it can be overwhelming.  We'll begin a series examining the pro's and cons (not too many cons) of all the options given to us here on the Terra network. It is important to note that not all APR's are created equal. APR's on each respective platform are paid out in in that respective platform's token. You earn `ANC` (or `UST`) on Anchor and `MIR` on Mirror, etc
+So you [understand and are excited by Terra](../what-is-terra.md), you've got your `LUNA` and/or your `UST` in hand and are ready for the magic to start. There are so many options it can be overwhelming.  We'll begin a series examining the pro's and cons (not too many cons) of all the options given to us here on the Terra network. It is important to note that not all APR's are created equal. APR's on each respective platform are paid out in in that respective platform's token. You earn `ANC` (or `UST`) on Anchor and `MIR` on Mirror, etc
 
 ## Terra Station
 
