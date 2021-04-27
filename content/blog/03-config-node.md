@@ -11,12 +11,7 @@ Whether this machine is a Validator or just a sentry, the setup is mostly common
 
 ## Create terrauser
 ```bash
-sudo useradd -u 99999 -G 1000 terrauser
-```
-
-## Become terrauser
-```bash
-sudo su - terrauser
+sudo useradd terrauser
 ```
 
 ## Update OS and add a few packages
@@ -45,6 +40,7 @@ echo "export PATH=/usr/local/go/bin:$PATH" >> /home/terrauser/.bashrc
 
 
 ## Install terrad
+
 ```bash
 git clone https://github.com/terra-project/core.git
 pushd core

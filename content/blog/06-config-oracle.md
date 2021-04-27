@@ -7,17 +7,6 @@ draft = false
 +++
 
 
-
-## Create oracleuser
-```bash
-sudo useradd -u 88888 -G 1000 oracleuser #supplementary (special gcp) group 1000 gives us sudo
-```
-
-## Become oracleuser
-```bash
-sudo su - oracleuser
-```
-
 ## Create oracle wallet
 Do this from a local client, not this oracle machine.  You want to protect these keys like you would any other.  
 ```bash
@@ -25,8 +14,14 @@ terracli keys add oracle #save this mnemonic!
 terracli keys show oracle
 ```
 
+Now over on the machine you are using as your oracle you can start setting things up...  
+
+## Create oracleuser
+```bash
+sudo useradd oracleuser 
+```
+
 ## Update OS and add a few packages
-Now over on the machine you are using as your oracle you can start setting things up.  
 ```bash
 sudo yum update -y
 sudo yum install jq git wget gcc-c++ make gcc -y
