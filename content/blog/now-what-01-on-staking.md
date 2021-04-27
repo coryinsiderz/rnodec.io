@@ -8,7 +8,7 @@ draft = false
 
 ## Ok I'm in, now what?
 
-So you [understand and are excited by Terra](./what-is-terra.md), you've got your `LUNA` and/or your `UST` in hand and are ready for the magic to start. There are so many options it can be overwhelming.  We'll begin a series examining the pro's and cons (not too many cons) of all the options given to us here on the Terra network. It is important to note that not all APR's are created equal. APR's on each respective platform are paid out in in that respective platform's token. You earn `ANC` (or `UST`) on Anchor and `MIR` on Mirror, etc
+So you [understand and are excited by Terra](https://rnodec.io/blog/what-is-terra), you've got your `LUNA` and/or your `UST` in hand and are ready for the magic to start. There are so many options it can be overwhelming.  We'll begin a series examining the pro's and cons (not too many cons) of all the options given to us here on the Terra network. It is important to note that not all APR's are created equal. APR's on each respective platform are paid out in in that respective platform's token. You earn `ANC` (or `UST`) on Anchor and `MIR` on Mirror, etc
 
 ## Terra Station
 
@@ -32,10 +32,11 @@ Lastly, it is worth pointing out that staking does carry a small degree of risk.
 
 ## Why Stake?
 
-While the APR delegating on `LUNA` is not as attractive on the surface as current options on Anchor or Mirror, it has the hidden benefits of:
-1) Being paid out in the most valuable, appreciating, asset on Terra, "The Queen Bee": `LUNA`
-2) Receiving unaccounted for returns on current and existing projects on the Terra network in the form of airdrops.
-3) Supporting and sustaining the engines of the Terra network.
+While the APR delegating on `LUNA` is not as attractive on the surface as current options on Anchor or Mirror, it has the hidden benefits of:  
+
+1. Being paid out in the most valuable, appreciating, asset on Terra, "The Queen Bee": `LUNA`  
+2. Receiving unaccounted for returns on current and existing projects on the Terra network in the form of airdrops.  
+3. Supporting and sustaining the engines of the Terra network.  
 
 The strongest networks are the most decentralized networks and in our opinion it is important to spread your 🥩. The rewards will vary marginally from validator to validator but the benefits of a vast, robust network will pay far greater dividends down the line.
 
