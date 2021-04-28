@@ -8,7 +8,7 @@ draft = false
 
 ## Ok I'm in, now what?
 
-So you [understand and are excited by Terra](../what-is-terra.md), you've got your `LUNA` and/or your `UST` in hand and are ready for the magic to start. There are so many options it can be overwhelming.  We'll begin a series examining the pros and cons (of which there are not many!) of all the options given to us here on the Terra network. It is important to note that not all APR's are created equal. APR’s on each respective platform are paid out in in that respective platform’s token. You earn `ANC` (or `UST`) on Anchor and `MIR` on Mirror. It would be reasonable to assume this being the case on future Terra platforms as well.
+So you [are excited about Terra](../what-is-terra.md), you've got your `LUNA` and/or your `UST` in hand and are ready for the magic to start. There are so many options it can be overwhelming.  We'll begin a series examining the pros and cons (of which there are not many!) of all the options given to us here on the Terra network. It is important to note that not all APR's are created equal. APR’s on each respective platform are paid out in in that respective platform’s token. You earn `ANC` (or `UST`) on Anchor and `MIR` on Mirror. It would be reasonable to assume this being the case on future Terra platforms as well.
 
 ## Terra Station
 
