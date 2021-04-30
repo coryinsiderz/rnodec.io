@@ -39,3 +39,5 @@ It may be a little overwhelming and oversimplified, but the process follows a lo
 
 
 Come back for "On Saving (part b)" to see what you can do with your `UST` on Anchor!
+
+For more in depth of what is going on behind the scenes of the Anchor protocol check out this fantastic [article] (https://link.medium.com/tOoT1rFmNfb) from esteemed community member Archon.
