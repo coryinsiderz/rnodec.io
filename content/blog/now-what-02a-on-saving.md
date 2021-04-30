@@ -8,7 +8,7 @@ draft = false
 
 ## Ok I'm staked, now what?
 
-So you have [delegated] (https://rnodec.io/blog/now-what-01-on-staking/) some of your `LUNA` amongst a few worthy validators to earn some more LUNA, become eligible for current and future Terra platform airdrops, and support the engines of the Terra network. Now that you got some 🥩 in the oven, you want to start saving on the Anchor protocol! Funny thing about saving on Anchor is it can look a lot like earning..
+So you have [delegated] (https://rnodec.io/blog/now-what-01-on-staking/) some of your `LUNA` amongst a few worthy validators to earn some more LUNA, become eligible for current and future Terra platform airdrops, and support the engines of the Terra network. Now that you got some 🥩 in the oven, you want to start saving on the Anchor protocol! Funny thing about saving on Anchor is it can look a lot like earning...
 
 ## Anchor
 
