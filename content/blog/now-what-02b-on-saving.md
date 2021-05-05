@@ -2,7 +2,7 @@
 
 ## On Saving (part b)
 
-So you got some 🥩 cooking with a few worthy Terra Station validators. You got some of your extra `LUNA` in Anchor bonded, provided as collateral, and you have borrowed `UST` against it.  Now you got some `UST` burning a hole in your proverbial pocket.  What can you do with it?
+So you got some 🥩 cooking with a few worthy Terra Station validators. [You got some of your extra `LUNA` in Anchor bonded, provided as collateral, and you have borrowed `UST` against it]({{< relref "now-what-02a-on-saving.md" >}}).  Now you got some `UST` burning a hole in your proverbial pocket.  What can you do with it?
 
 Anchor is, at it's core, a savings platform.  Although we are earning a yield on our `bLUNA` (in the form of `ANC`), the real way to use Anchor to it's full potential is with `UST`.  Doesn't have to be the `UST` we just borrowed, but it certainly makes sense for it to be.  So we'll deposit our unused `UST` and earn an APY on it (currently 20%).  While that APY has fluctuated higher, Anchor is programmed to always be at least 20%.  This is where the `UST` you borrowed from your `bLUNA` comes from!  By doing this, your `UST` deposit is automatically compounded (APY) by 20% and you can save and grow your unused `UST`. 
 
