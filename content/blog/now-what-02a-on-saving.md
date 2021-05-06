@@ -6,7 +6,7 @@ weight = 20
 draft = false 
 +++
 
-## Ok I'm staked, now what?!
+# Ok I'm staked, now what?!
 
 So you've [delegated some of your `LUNA`] ({{< relref "now-what-01-on-staking.md" >}}) amongst a few worthy validators and in doing so you are earning yourself some more `LUNA`.  Which means you have also made yourself eligible for current and future Terra network airdrops, and are supporting the engines of the Terra network.  A great start.  🥩 on the grill, or in the oven, or on the pan, or...  But you got some undelegated `LUNA` and you want to start saving!  Very sharp.  The modern financial world has taught us that saving is hoarding.  But that is not what saving is at all.  Saving should reward you.  And that's the cool thing about saving on Anchor - it feels a lot like earning.  
 
