@@ -10,7 +10,7 @@ So you got some 🥩 cooking with a few worthy Terra Station validators. You got
 
 ## "Saving" with `UST`
 
-Anchor is, at it's core, a savings platform.  Although we are earning a yield on our `bLUNA` (in the form of `ANC`), another way to save on Anchor is with `UST`.  It doesn't have to be the `UST` we just borrowed, but it certainly can be.  So we'll deposit our unused `UST` and earn an APY on it (currently 20%).  While that APY has fluctuated higher, Anchor is programmed to always be at least 20%.  This is where the `UST` you borrowed from your `bLUNA` comes from!  By doing this, your `UST` deposit is automatically compounded (APY) by 20% and you can save and grow your unused `UST`. 
+Anchor is, at it's core, a savings platform.  While we are earning a yield on our collateralized `bLUNA` (in the form of `ANC`), another, more traditional, way to save on Anchor is with `UST`.  It doesn't have to be the `UST` we just borrowed, but it certainly can be.  So we'll deposit our unused `UST` and earn an APY on it (currently 20%).  While that APY has fluctuated higher, Anchor's yield is programmed to always be at least 20%.  This is one of the places the `UST` you borrowed from your `bLUNA` comes from!  By doing this, your `UST` deposit is automatically compounded (APY) by 20% and you can save and grow your unused `UST`. 
 
 This is simply done by going to the _**Earn**_ tab and selecting the _"deposit"_ option and selecting how much `UST` you would like to earn on.  That's it, your anchor is dropped, you are saving.  
 
