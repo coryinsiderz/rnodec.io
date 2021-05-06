@@ -6,7 +6,7 @@ weight = 20
 draft = false 
 +++
 
-So you got some 🥩 cooking with a few worthy Terra Station validators. [You got some of your extra `LUNA` in Anchor bonded, provided as collateral, and you have borrowed `UST` against it]({{< relref "now-what-02a-on-saving.md" >}}).  Now you got some `UST` burning a hole in your proverbial pocket.  What can you do with it?
+So you got some 🥩 cooking with a few worthy Terra Station validators. You got some of your extra `LUNA` in Anchor [bonded] ({{< relref "now-what-02a-on-saving.md" >}}), provided as collateral, and you have borrowed `UST` against it.  Now you got some `UST` burning a hole in your proverbial pocket.  What can you do with it?
 
 ## "Saving" with `UST`
 
