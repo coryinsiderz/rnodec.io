@@ -17,7 +17,7 @@ More to come!  Maybe!
 
 ## How can RnodeC help me?
 
-By inspiring you to join us in the journey of the new world.  We'll see where this goes.
+By inspiring you to join us in the journey into the new world.  We'll see where this goes.
 
 But if you get involved in Terra, you can start out by throwing us some 🥩 
 
