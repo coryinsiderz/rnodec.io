@@ -13,19 +13,20 @@ We fight the good fight by operating nodes in blockchains that we believe in.  A
 
 Currently we run a validator in the [terraform.money](https://terraform.money) ecosystem.  For proof, [check out our validator node!](https://hubble.figment.io/terra/chains/columbus-4/validators/AFE642901FCA4501BC0E2641A43B54E8E9D948FC)
 
-More to come!  
+More to come!  Maybe!  
 
-## How can I support RnodeC?
+## How can RnodeC help me?
 
-By staking your tokens (`$LUNA`, for example) to the RnodeC validator.  
+By inspiring you to join us in the journey of the new world.  We'll see where this goes.
 
-Staking your tokens to our validator means more rewards for us.  Validator nodes share the pool of transaction fees in exchange for their support of the network.  
+But if you get involved in Terra, you can start out by throwing us some 🥩 
 
-Staking your tokens to RnodeC is indeed supporting us, but really it is supporting yourself (earning a yield on your investment) and it is supporting the projects that we are involved in (such as Terra).  
+Yes, staking your tokens to RnodeC is supporting us, but really it is supporting yourself (earning a yield on your investment) 
+
 
 ## What is Staking?
 
-"Staking" cryptocurrency is the alternative to just idle-y sitting on them and waiting for the number to go up.  It is a low-risk path to earn passive interest on your investment.  (there are high risk paths too!  Feel free to reach out if you'd like to discuss.)
+"Staking" cryptocurrency is one style of the alternative to just idle-y sitting on them and waiting for the number to go up.  It is a low-risk path to earn passive interest on your investment.  (there are high risk paths too!  Feel free to reach out if you'd like to discuss.)
 
-Frankly, it makes no difference to you which node you stake your tokens to.  Considerations involved in that decision are first and foremost "do you trust the validator to stay online and behave well."  Decentralized networks have mechanisms in place to penalize validators who misbehave whether intentionally or unintentionally.  And these mechanisms impact all stakers as well, not just the validator.  So, choose a validator you can trust.  
+Frankly, it makes no difference to *you* which node you stake your tokens to.  Decentralized networks have mechanisms in place to incentivize validators to behave well, so most do. But keep in mind, a strong network is a well-balanced network.  
 
