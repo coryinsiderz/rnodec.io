@@ -32,11 +32,17 @@ Every transaction in Terra will burn (destroy) either `LUNA` or a particular sta
 
 ## Anchor
 
-Anchor is a savings platform that literally pays you money to take out loans.  You take out a loan by “bonding” your `LUNA` (aka putting your `LUNA` up as collateral) and paying you on that as long as you keep your loan amount under 50% this collateral value.  Anchor pays you a yield in `ANC` (`ANC` is the native token of the Anchor protocol).  You can also deposit your `UST` on Anchor and earn a flat, consistent 20% APY - paid out in `UST`.  How savings banks should be!
+Anchor is a savings platform that literally pays you money to take out loans.  You take out a loan by “bonding” your `LUNA` - aka putting your `LUNA` up as collateral.  You then take out a loan from Anchor against that, and then Anchor kindly pays you a dividend for participating, as long as you keep your loan amount under 50% this collateral value.  And the collateral value fluctuates (gamble gamble).  
+
+Anchor pays you your yield in `ANC` (the native token of the Anchor protocol).  You can also deposit your `UST` back into Anchor and earn a flat, consistent 20% APY - paid out in `UST`.  How savings banks should be!  
 
 ## Mirror 
 
-Mirror is the investing platform where you can buy and sell “mirrored” assets - your favorite stocks - TSLA, AMZN, FB, AMC, GME etc... COIN just added - using `UST`.  There is mirrored Bitcoin and mirrored ethereum on there as well.  A mirrored asset is a digital representation of the particular real world asset.  Algorithmically, the mirrored asset will exactly track the real world price.  One of the appeals of this concept is opening the doors of major money markets to parts of the world that have historically been excluded due to regulations, logistics etc.  Another appeal is that you can buy and sell these assets paying fractions of percentages you would pay on normal trading platforms as well as buying fractions of these assets instead of the whole stock.  This is all done through “Automated Market Making” (AMM), which is when all users provide liquidity to certain pools by providing equal parts of the mirrored asset and `UST`.  By doing this they earn a percentage yield, paid in `MIR` token (`MIR` is the native token of the Mirror Protocol).  These range from 25% APY on the liquid ones to 150% APY on the illiquid volatile ones (AMC and GME).
+Mirror is the investing platform where you can buy and sell “mirrored” assets - your favorite stocks - TSLA, AMZN, FB, AMC, GME, COIN - using `UST`.  A mirrored asset is a digital representation of the particular real world asset.  Algorithmically, the mirrored asset will exactly track the real world price.  There is mirrored Bitcoin and mirrored ethereum there as well.    
+
+One of the appeals of this concept is opening the doors of major money markets to parts of the world that have historically been excluded due to regulations, logistics etc.  Another appeal is that you can buy and sell these assets paying fractions of percentages you would pay on normal trading platforms.  This is all done through “Automated Market Making” (AMM), which is when all users *provide* liquidity to certain pools by providing equal parts of the mirrored asset and `UST`.  By doing this they earn a percentage yield.  Yield ranges from 25% APY on the liquid ones to 150% APY on the illiquid volatile ones (AMC and GME).
+
+Mirror pays your yield in `MIR` token (the native token of the Mirror Protocol).  
 
 ## Chai
 
