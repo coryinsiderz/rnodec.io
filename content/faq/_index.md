@@ -11,7 +11,7 @@ We fight the good fight by operating nodes in blockchains that we believe in.  A
 
 ## Which Blockchains does RnodeC support?
 
-Currently we run a validator in the [terraform.money](https://terraform.money) ecosystem.  For proof, [check out our validator node!](https://hubble.figment.io/terra/chains/columbus-4/validators/AFE642901FCA4501BC0E2641A43B54E8E9D948FC)
+Currently we run a validator in the [terraform.money](https://terraform.money) ecosystem.  For proof, [check out our validator node](https://hubble.figment.io/terra/chains/columbus-4/validators/AFE642901FCA4501BC0E2641A43B54E8E9D948FC)
 
 More to come!  Maybe!  
 
