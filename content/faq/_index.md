@@ -26,7 +26,7 @@ Yes, staking your tokens to RnodeC is supporting us, but it is also (hopefully!)
 
 ## What is Staking?
 
-"Staking" cryptocurrency is one style of the alternative to just idle-y sitting on them and waiting for the number to go up.  It is a low-risk path to earn passive interest on your investment.  (there are high risk paths too!  Feel free to reach out if you'd like to discuss.)
+"Staking" cryptocurrency is one style of the alternative to just idle-y sitting on them and waiting for the number to go up.  It is a low-risk path to earn passive interest on your investment.  (there are high risk paths too!  Feel free to reach out if you'd like to discuss).  Staking is also "voting" for the validators you stand by.  
 
 Frankly, it makes no difference to *you* which node you stake your tokens to.  Decentralized networks have mechanisms in place to incentivize validators to behave well, so most do. But keep in mind, a strong network is a well-balanced network.  
 
