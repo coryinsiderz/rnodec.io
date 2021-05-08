@@ -50,7 +50,7 @@ Chai is a peer-to-peer payments gateway that allows users to send their localiti
 
 ## Closing Remarks
 
-There is incredible opportunity for gains in Terra.  And although a core belief of RnodeC is that Bitcoin is always the ultimate prize, we also believe that there are many layers to the new economy and that Terra is an important piece of the puzzle.  With fast, cheap, and frictionless transactions, along with a vast and diverse ecosystem, one is able to fulfill all of their current and unrealized financial needs without paying a centralized entity.  All of course in hopes of the (new) American Dream which is buying Bitcoin without USD. 
+There is incredible opportunity for gains in Terra.  And although a core belief of RnodeC is that Bitcoin is always the ultimate prize, we also believe that there are many layers to the new economy and that Terra is an important piece of the puzzle.  With fast, cheap, and frictionless transactions, along with a vast and diverse ecosystem, one is able to fulfill all of their current and unrealized financial needs without paying a centralized entity.  All of course in hopes of the (new) American Dream which is buying Bitcoin with something other than USD. 
 
 To the moon, as they say.
 
