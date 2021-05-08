@@ -19,9 +19,7 @@ More to come!  Maybe!
 
 By inspiring you to join us in the journey into the new world.  We'll see where this goes.
 
-But if you get involved in Terra, you can start out by throwing us some 🥩 
-
-Yes, staking your tokens to RnodeC is supporting us, but it is also (hopefully!) supporting yourself.  You are earning a yield on your investment.  
+But if you get involved in Terra, please feel free to throw us some 🥩 .  And yes, staking your tokens to RnodeC is supporting us, but it is also (hopefully!) supporting yourself.  You are earning a yield on your investment.  
 
 
 ## What is Staking?
