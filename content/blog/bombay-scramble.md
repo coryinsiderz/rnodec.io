@@ -151,7 +151,20 @@ terrad keys add bombay --keyring-backend os
 # go to faucet.terra.money and add some funds
 ```  
 
-* Register Validator (not needed if you are migrating from tequila)  
+
+* Since we are migrating from tequila we just simply unjail Validator (not needed if you are setting up fresh)  
+
+```bash
+terrad tx slashing unjail \
+   --from tequila \
+   --chain-id bombay-0005 \
+   --gas-prices 1.5uluna \
+   --gas-adjustment=1.4 \
+   --keyring-backend os 
+```
+> * Here, "tequila" is the same wallet that was used to set up the original tequila testnet validator*   
+
+* Otherwise we would have to register Validator like this.  This is just an example, we did not do this since we already had our validator registered on tequila  
 
 ```bash
 terrad tx staking create-validator \
@@ -168,18 +181,7 @@ terrad tx staking create-validator \
 	--chain-id bombay-0005 \
 	--keyring-backend os 
 ```  
-
-* But since we are migrating from tequila we just simply unjail Validator (not needed if you are setting up fresh)  
-
-```bash
-terrad tx slashing unjail \
-   --from tequila \
-   --chain-id bombay-0005 \
-   --gas-prices 1.5uluna \
-   --gas-adjustment=1.4 \
-   --keyring-backend os 
-```
-> * Here, "tequila" is the same wallet that was used to set up the original tequila testnet validator*    
+ 
 
 ## Oracle  
 
