@@ -332,11 +332,11 @@ sudo systemctl enable node_exporter
 sudo systemctl start node_exporter
 ```  
 
-* Add this snippet to `/etc/prometheus/prometheus.yml`  
+* Add this snippet to `/etc/prometheus/prometheus.yml` on prometheus machine
 
 ```bash
   - job_name: 'bombay_node_exporter_metrics'
     scrape_interval: 5s
     static_configs:
-      - targets: ['34.122.94.70:9100']
+      - targets: ['3x.x.x.x0:9100']
 ```  
