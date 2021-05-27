@@ -21,6 +21,7 @@ ssh into it...
 ## Terra 
 
 * Dependencies  
+
 ```bash
 sudo yum update -y
 sudo yum install git wget jq make gcc -y
@@ -31,6 +32,7 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.16.4.linux-amd64.ta
 ```  
 
 * Kernel parameter tuning  
+
 ```bash
 sudo bash -c "cat > /etc/security/limits.d/terrad.conf << EOF
 # /etc/security/limits.conf
@@ -41,6 +43,7 @@ EOF"
 ```  
 
 * Format and mount attached disk  
+
 ```bash
 sudo mkfs -t ext4 /dev/sdb
 sudo mkdir /chaindata
@@ -48,12 +51,14 @@ sudo mount -t ext4 /dev/sdb /chaindata
 ```  
 
 * Create terra user  
+
 ```bash
 sudo useradd terra
 sudo su - terra
 ```  
    
 * Build `terrad`  
+
 ```bash   
 git clone https://github.com/terra-project/core.git
 pushd core/
@@ -64,6 +69,7 @@ which terrad
 ```  
 
 * Configure `terrad`  
+
 ```bash
 terrad init RnodeC --chain-id bombay-0005
 
@@ -82,11 +88,13 @@ ln -s /chaindata/ .terra/data
 ```
 
 * Return to sudo user  
+
 ```bash
 exit
 ```
 
 * Install `terrad` systemd unit file  
+
 ```bash
 sudo bash -c "cat > /etc/systemd/system/terrad.service << EOF
 [Unit]
@@ -109,6 +117,7 @@ EOF"
 ```
 
 * Start `terrad`  
+
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable terrad
@@ -119,16 +128,19 @@ sudo journalctl -u terrad -f
 ```
 
 * Become terra user again  
+
 ```bash
 sudo su - terra
 ```  
 
 * Make sure we are synched up (catching_up="false")  
+
 ```bash
 terrad status
 ```  
 
 * Create a bombay wallet  
+
 ```bash
 terrad keys add bombay --keyring-backend os
 
@@ -136,6 +148,7 @@ terrad keys add bombay --keyring-backend os
 ```  
 
 * Register Validator (not needed if you are migrating from tequila)  
+
 ```bash
 terrad tx staking create-validator \
 	--pubkey '{"@type":"/cosmos.crypto.ed25519.PubKey","key":"yCt9TJQqoZyu6BCfNlCcik/1djZgS7s8DLh9AgmrZh8="}' \
@@ -152,7 +165,8 @@ terrad tx staking create-validator \
 	--keyring-backend os 
 ```  
 
-* But since we are migrating from tequila we just simply unjail Validator (not needed if you are setting up fresh)   
+* But since we are migrating from tequila we just simply unjail Validator (not needed if you are setting up fresh)  
+
 ```bash
 terrad tx slashing unjail \
    --from tequila \
@@ -166,6 +180,7 @@ terrad tx slashing unjail \
 ## Oracle  
 
 * Dependencies  
+
 ```bash
 # g++
 sudo yum install gcc-c++ -y
@@ -187,12 +202,14 @@ sudo bash -c "echo \"export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin
 ```  
 
 * Create oracle user  
+
 ```bash
 sudo useradd oracle
 sudo su - oracle
 ```  
 
 * Get oracle-feeder  
+
 ```bash
 git clone https://github.com/terra-project/oracle-feeder.git
 pushd oracle-feeder/feeder
@@ -204,6 +221,7 @@ npm start update-key
 > *we are assuming that price server is running elsewhere ("tequilaval")*  
 
 * `run-feeder` script  
+
 ```bash
 bash -c "cat > /home/oracle/run-feeder.sh << EOF
 #!/bin/bash
@@ -226,6 +244,7 @@ chmod +x /home/oracle/runfeeder.sh
 
 
 * Install feeder systemd unit file  
+
 ```bash
 sudo bash -c "cat > /etc/systemd/system/feeder.service << EOF
 [Unit]
@@ -250,11 +269,13 @@ EOF"
 ```  
 
 * Return to sudo user  
+
 ```bash
 exit
 ```  
 
 * Run feeder  
+
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable feeder
@@ -269,23 +290,27 @@ https://prometheus.io/download/
 
 
 * Create user  
+
 ```bash
 sudo useradd -rs /bin/false node_exporter
 ```  
 
 * Download  
+
 ```bash
 NODE_EXPORTER_VERS=1.1.2
 wget -O - https://github.com/prometheus/node_exporter/releases/download/v${NODE_EXPORTER_VERS}/node_exporter-${NODE_EXPORTER_VERS}.linux-amd64.tar.gz | tar xz
 ```  
 
 * Relocate Files  
+
 ```bash
 sudo mv node_exporter-${NODE_EXPORTER_VERS}.linux-amd64/node_exporter /usr/local/bin
 rm -rf node_exporter-${NODE_EXPORTER_VERS}.linux-amd64/
 ```  
 
 * Systemd Unit File  
+
 ```bash
 sudo bash -c "cat > /etc/systemd/system/node_exporter.service << EOF 
 [Unit]
@@ -308,6 +333,7 @@ sudo systemctl start node_exporter
 ```  
 
 * Add this snippet to `/etc/prometheus/prometheus.yml`  
+
 ```bash
   - job_name: 'bombay_node_exporter_metrics'
     scrape_interval: 5s
