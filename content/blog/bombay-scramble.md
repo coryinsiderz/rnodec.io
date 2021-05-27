@@ -6,7 +6,7 @@ weight = 20
 draft = false 
 +++
 
-Terra recently released the ***bombay*** network as a testing ground ahead of the much anticipated upgrade from ***columbus-4*** to ***columbus-5*** mainnet.  What follows here is the steps we took to setup a brand new node from scratch on this network.  Usually we would use our [ansible scripts](https://github.com/RnodeC/terra-scripts/terra-ble) to provision a new machine on the terra network, but there are many new wrinkles and features here, so we set this validator node up by hand.  
+Terra recently released the ***bombay*** network as a testing ground ahead of the much anticipated upgrade from ***columbus-4*** to ***columbus-5*** mainnet.  What follows here is the steps we took to setup a brand new node from scratch on this network.  Usually we would use our [ansible scripts](https://github.com/RnodeC/terra-git/tree/master/terra-ble) to provision a new machine on the terra network, but there are many new wrinkles and features here, so we set this validator node up by hand.  
 
 Also note that we are transplating our existing ***tequila-0004*** testnet validator node over to ***bombay-0005*** here.  As opposed to creating a brand new validator.  The only difference is that we copied over our `priv_validator_key.json` and `node_key.json` before launching the `terrad` daemon.  
 
