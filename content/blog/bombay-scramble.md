@@ -20,7 +20,7 @@ ssh into it...
 
 ## Terra 
 
-* Dependencies
+* Dependencies  
 ```bash
 sudo yum update -y
 sudo yum install git wget jq make gcc -y
@@ -30,7 +30,7 @@ wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.16.4.linux-amd64.tar.gz
 ```  
 
-* Kernel parameter tuning
+* Kernel parameter tuning  
 ```bash
 sudo bash -c "cat > /etc/security/limits.d/terrad.conf << EOF
 # /etc/security/limits.conf
@@ -40,20 +40,20 @@ sudo bash -c "cat > /etc/security/limits.d/terrad.conf << EOF
 EOF"
 ```  
 
-* Format and mount attached disk
+* Format and mount attached disk  
 ```bash
 sudo mkfs -t ext4 /dev/sdb
 sudo mkdir /chaindata
 sudo mount -t ext4 /dev/sdb /chaindata
 ```  
 
-* Create terra user
+* Create terra user  
 ```bash
 sudo useradd terra
 sudo su - terra
 ```  
    
-* Build `terrad`
+* Build `terrad`  
 ```bash   
 git clone https://github.com/terra-project/core.git
 pushd core/
@@ -63,7 +63,7 @@ GOBIN=$HOME/bin make install
 which terrad
 ```  
 
-* Configure `terrad`
+* Configure `terrad`  
 ```bash
 terrad init RnodeC --chain-id bombay-0005
 
@@ -81,12 +81,12 @@ rm -rf .terra/data
 ln -s /chaindata/ .terra/data
 ```
 
-* Return to sudo user
+* Return to sudo user  
 ```bash
 exit
 ```
 
-* Install `terrad` systemd unit file
+* Install `terrad` systemd unit file  
 ```bash
 sudo bash -c "cat > /etc/systemd/system/terrad.service << EOF
 [Unit]
@@ -108,7 +108,7 @@ LimitNOFILE=65535
 EOF"
 ```
 
-* Start `terrad`
+* Start `terrad`  
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable terrad
@@ -118,24 +118,24 @@ sudo systemctl start terrad
 sudo journalctl -u terrad -f
 ```
 
-* Become terra user again
+* Become terra user again  
 ```bash
 sudo su - terra
 ```  
 
-* Make sure we are synched up (catching_up="false")
+* Make sure we are synched up (catching_up="false")  
 ```bash
 terrad status
 ```  
 
-* Create a bombay wallet
+* Create a bombay wallet  
 ```bash
 terrad keys add bombay --keyring-backend os
 
 # go to faucet.terra.money and add some funds
 ```  
 
-* Register Validator (not needed if you are migrating from tequila)
+* Register Validator (not needed if you are migrating from tequila)  
 ```bash
 terrad tx staking create-validator \
 	--pubkey '{"@type":"/cosmos.crypto.ed25519.PubKey","key":"yCt9TJQqoZyu6BCfNlCcik/1djZgS7s8DLh9AgmrZh8="}' \
@@ -152,7 +152,7 @@ terrad tx staking create-validator \
 	--keyring-backend os 
 ```  
 
-* But since we are migrating from tequila we just simply unjail Validator (not needed if you are setting up fresh) 
+* But since we are migrating from tequila we just simply unjail Validator (not needed if you are setting up fresh)   
 ```bash
 terrad tx slashing unjail \
    --from tequila \
@@ -161,11 +161,11 @@ terrad tx slashing unjail \
    --gas-adjustment=1.4 \
    --keyring-backend os 
 ```
-> * Here, "tequila" is the same wallet that was used to set up the original tequila testnet validator*  
+> * Here, "tequila" is the same wallet that was used to set up the original tequila testnet validator*    
 
-## Oracle
+## Oracle  
 
-* Dependencies
+* Dependencies  
 ```bash
 # g++
 sudo yum install gcc-c++ -y
@@ -184,15 +184,15 @@ wget -O - https://nodejs.org/dist/v14.16.0/node-$VERSION-$DISTRO.tar.xz | sudo t
 
 # make sure oracle user has npm in path
 sudo bash -c "echo \"export PATH=/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:\$PATH\" >> /home/oracle/.bashrc"
-```
+```  
 
-* Create oracle user
+* Create oracle user  
 ```bash
 sudo useradd oracle
 sudo su - oracle
-```
+```  
 
-* Get oracle-feeder
+* Get oracle-feeder  
 ```bash
 git clone https://github.com/terra-project/oracle-feeder.git
 pushd oracle-feeder/feeder
@@ -203,7 +203,7 @@ npm start update-key
 ```  
 > *we are assuming that price server is running elsewhere ("tequilaval")*  
 
-* `run-feeder` script
+* `run-feeder` script  
 ```bash
 bash -c "cat > /home/oracle/run-feeder.sh << EOF
 #!/bin/bash
@@ -222,10 +222,10 @@ npm start vote -- \
     --gas-prices 169.77ukrw
 EOF"
 chmod +x /home/oracle/runfeeder.sh
-```
+```  
 
 
-* Install feeder systemd unit file
+* Install feeder systemd unit file  
 ```bash
 sudo bash -c "cat > /etc/systemd/system/feeder.service << EOF
 [Unit]
@@ -247,49 +247,45 @@ WantedBy=multi-user.target
 [Service]
 LimitNOFILE=65535
 EOF"
-```
+```  
 
-* Return to sudo user
+* Return to sudo user  
 ```bash
 exit
 ```  
 
-
-terracli tx oracle set-feeder $FEEDER_ADDRESS --from=$VALIDATOR --chain-id $NETWORK --fees="30000uluna"
-
-
-* Run feeder
+* Run feeder  
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable feeder
 sudo systemctl start feeder
-```  
+```   
 
 ## Node Exporter
 
 In order to monitor resource consumption...
 
-https://prometheus.io/download/
+https://prometheus.io/download/  
 
 
-* Create user
+* Create user  
 ```bash
 sudo useradd -rs /bin/false node_exporter
 ```  
 
-* Download
+* Download  
 ```bash
 NODE_EXPORTER_VERS=1.1.2
 wget -O - https://github.com/prometheus/node_exporter/releases/download/v${NODE_EXPORTER_VERS}/node_exporter-${NODE_EXPORTER_VERS}.linux-amd64.tar.gz | tar xz
 ```  
 
-* Relocate Files
+* Relocate Files  
 ```bash
 sudo mv node_exporter-${NODE_EXPORTER_VERS}.linux-amd64/node_exporter /usr/local/bin
 rm -rf node_exporter-${NODE_EXPORTER_VERS}.linux-amd64/
 ```  
 
-* Systemd Unit File
+* Systemd Unit File  
 ```bash
 sudo bash -c "cat > /etc/systemd/system/node_exporter.service << EOF 
 [Unit]
@@ -311,7 +307,7 @@ sudo systemctl enable node_exporter
 sudo systemctl start node_exporter
 ```  
 
-* Add this snippet to `/etc/prometheus/prometheus.yml`
+* Add this snippet to `/etc/prometheus/prometheus.yml`  
 ```bash
   - job_name: 'bombay_node_exporter_metrics'
     scrape_interval: 5s
