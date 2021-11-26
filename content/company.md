@@ -1,4 +1,4 @@
 +++
 title = "Company"
-description = "We operate nodes"
+description = "We operate nodes, among other things"
 +++

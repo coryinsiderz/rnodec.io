@@ -6,25 +6,13 @@ description = "Asked and answered"
 
 ## What does RnodeC do?
 
-We fight the good fight by operating nodes in blockchains that we believe in.  All decentralized systems require decentralized communities to make the network unbreakable.  We are here to do our duty.
+All decentralized systems require decentralized communities to make the network unbreakable.  We are here to do our duty and fight the good fight.  
+
+Originally, this meant that we operated nodes in blockchains that we believe in (bitcoin, ethereum, terra, solana).  Our journey began with Terra - we ran a [validator node](https://hubble.figment.io/terra/chains/columbus-4/validators/AFE642901FCA4501BC0E2641A43B54E8E9D948FC) for a few months before realizing that, essentially, we just didn't have the capital to continue running a secure, robust architecture.  At the same time, our passions were pulling us towards something higher level, for which we search.   
 
 
-## Which Blockchains does RnodeC support?
+## So does RnodeC actually do anything?  
 
-Currently we run a validator in the [terraform.money](https://terraform.money) ecosystem.  For proof, [check out our validator node](https://hubble.figment.io/terra/chains/columbus-4/validators/AFE642901FCA4501BC0E2641A43B54E8E9D948FC)
+Actually we do still run an [eth2 validator node](https://beaconcha.in/validator/99abaf48501f91bffb12684c831596f0a8979e2c24d5ad021c9cf850cf29b45d88bc1ab5359462410654e6ecb36fe8dd).  This one is maintained pro bono on behalf of friends and family, for the community.  Our fee is the experience.  
 
-More to come!  Maybe!  
-
-## How can RnodeC help me?
-
-By inspiring you to join us in the journey into the new world.  We'll see where this goes.
-
-But if you get involved in Terra, please feel free to throw us some 🥩 .  And yes, staking your tokens to RnodeC is supporting us, but it is also (hopefully!) supporting yourself.  You are earning a yield on your investment.  
-
-
-## What is Staking?
-
-"Staking" cryptocurrency is one style of the alternative to just idle-y sitting on them and waiting for the number to go up.  It is a low-risk path to earn passive interest on your investment.  (there are high risk paths too!  Feel free to reach out if you'd like to discuss).  Staking is also "voting" for the validators you stand by.  
-
-Frankly, it makes no difference to *you* which node you stake your tokens to.  Decentralized networks have mechanisms in place to incentivize validators to behave well, so most do. But keep in mind, a strong network is a well-balanced network.  
 
