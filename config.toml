@@ -1,21 +1,60 @@
-baseURL = "/"
+baseURL = "https://rnodec.io/"
 languageCode = "en-us"
 title = "RnodeC"
-theme = "kube"
-description = "RnodeC: We are node operators"
-Paginate = 4
-[Params]
-  author = "RnodeC"
-  github = "github.com/RnodeC"
-  twitter = "@RnodeC"
-  email = "support@rnodec.io"
 
+theme = "hugo-ficurinia"
 
-[[menu.main]]
-    name = "Blog"
-    weight = -100
-    url = "/blog/"
-[[menu.main]]
-    name = "Faq"
-    weight = -100
-    url = "/faq/"
+author = "RnodeC"
+copyright = "RnodeC"
+
+paginate = 3
+summaryLength = 50
+
+[params]
+    description = "RnodeC"
+    author = "RnodeC"
+    logo = "/logo.png"
+    favicon = "/favicon.png"
+    faviconIco = "/favicon.ico"
+    appletouch = "/apple-touch-icon.png"
+    svgicon = "/logo.png"
+    icon512 = "/android-chrome-512x512.png"
+    enableSearch = false 
+    navtype = "standard"  # or "circles"
+    menuStyle = "standard" # or "buttons"
+    articleSummary = true
+    showSinglePageAsHome = false
+    homeSinglePage = "/home"
+    logoRightOfTitle = true 
+    imageInArticlePreview = true
+
+    enableShareOnFediverse = false
+
+    enableRelatedArticles = false
+    relatedArticlesNum = 2 
+    forceRedirect = true
+
+[markup]
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = true
+        lineNos = false
+        lineNumbersInTable = false
+        tabWidth = 4
+        style = "dracula"
+    [markup.tableOfContents]
+        endLevel = 5
+        ordered = false
+        startLevel = 1
+
+[menu]
+    [[menu.icons]]
+        identifier = "github"
+        name = "Github"
+        url = "https://github.com/RnodeC"
+        weight = 10
+    [[menu.icons]]
+        identifier = "twitter"
+        name = "Twitter"
+        url = "https://twitter.com/RnodeC"
+        weight = 30
