@@ -1,15 +1,14 @@
-+++
-title = "Eth2 Node Setup"
-description = "How I setup an eth2 validator node"
-date = 2021-11-22
-weight = 20
-draft = false
-+++
-
+---
+title: Eth2 Node Setup
+tags:
+  - how-to
+  - eth
+date: 2021-11-22 
+---
 
 These are really for my own reference, not supposed to be a script to follow, but feel free to peruse.  
 
-## Node Lockdown / Initial Config
+## Node Lockdown / Initial Configs
 
 * modify ssh settings - change port, create sudo user and authorized keys, no rootlogin, no password  
 

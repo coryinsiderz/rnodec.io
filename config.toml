@@ -1,7 +1,7 @@
 #baseURL = "https://rnodec.io/"
 languageCode = "en-us"
 title = "RnodeC"
-
+description = "Doing our duty"
 theme = "hugo-ficurinia"
 
 author = "RnodeC"
@@ -10,8 +10,8 @@ copyright = "RnodeC"
 paginate = 3
 summaryLength = 50
 
+tags = false 
 [params]
-    description = "RnodeC"
     author = "RnodeC"
     logo = "/logo.png"
     favicon = "/favicon.png"
@@ -24,9 +24,12 @@ summaryLength = 50
     menuStyle = "standard" # or "buttons"
     articleSummary = true
     showSinglePageAsHome = true
+    extraContentDirs = ["about"]
     homeSinglePage = "/home"
     logoRightOfTitle = true 
     imageInArticlePreview = true
+    showRss = false
+    showTags = false
 
     enableShareOnFediverse = false
 
@@ -58,3 +61,8 @@ summaryLength = 50
         name = "Twitter"
         url = "https://twitter.com/RnodeC"
         weight = 30
+    [[menu.icons]]
+            identifier = "discord"
+            name = "Discord"
+            url = "https://twitter.com/RnodeC"
+            weight = 30
