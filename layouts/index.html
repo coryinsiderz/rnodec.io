@@ -1,45 +1,37 @@
-{{ define "title"}} {{ .Site.Title}} {{end}}
-{{ define "header"}} {{ partial "header" .}} {{end}}
-{{ define "main"}}
+{{ define "main" }}
+<script src="https://kit.fontawesome.com/9d411d3395.js" crossorigin="anonymous"></script>
+<style>
+.row {
+  display: flex;
+}
 
-<div id="main">
-  <div id="hero">
-    <h1>{{.Title}}</h1>
-    <p>{{.Description}}</p>
-  </div>
-  <div id="action-buttons">
-    <a class="button outline big" href="https://github.com/RnodeC" >Check us out on Github</a>
-    <p>Includes all of our scripts, tools, and templates we use for managing our nodes</p>
-  </div>
-  <div id="rnodec">
-    <div class="row gutters">
-      <div class="col col-4 item">
-        <figure>
-          <img alt="Baseline" height="48" src="{{ "/img/kube/icon-baseline.png" | relURL }}" width="48">
-        </figure>
-        <h3>Experienced</h3>
-        <p>Have successfully ran nodes on multiple chains</p>
-      </div>
-      <div class="col col-4 item">
-        <figure>
-          <img alt="Typography" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-        </figure>
-        <h3>Reliable</h3>
-        <p>Heart and Effort are pillars of RnodeC</p>
-      </div>
-      <div class="col col-4 item">
-        <figure>
-          <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-baseline.png" | relURL }}" width="48">
-        </figure>
-        <h3>Integrated</h3>
-        <p>Teamwork makes the Dream work</p>
-      </div>
-    </div>
+.column {
+  flex: 33%;
+  margin: 1px;
+  padding: 20px;
+  text-align: center;
+}
 
+</style>
 
-
-  </div>
+<div>
+  <p>We are a small team of passionate node operators, developers, and dreamers. We ride around. We get it. Here to contribute and do our duty.</p>
 </div>
-</div>
+<div class="row">
+  <div class="column">
+    <h3>Experienced</h3>
+    <p>Ran Nodes on Multiple Chains</p>
+    <p class="fa-solid fa-shield-halved fa-6x"></p>
+  </div>
+  <div class="column">
+    <h3>Integrated</h3>
+    <p>Teamwork makes the Dream work</p>
+    <p class="fa-solid fa-network-wired fa-6x"></p>
+  </div>
+  <div class="column">             
+    <h3>Reliable</h3>
+    <p>Heart and Effort are Pillars of RnodeC</p>
+    <p class="fa-solid fa-building-columns fa-6x"></p>
+  </div>
+
 {{ end }}
-{{ define "footer"}} {{ partial "footer" .}} {{end}}
