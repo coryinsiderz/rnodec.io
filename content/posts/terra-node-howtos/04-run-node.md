@@ -1,11 +1,13 @@
-+++
-title = "Terraform-Validator-04: Run Full Node"
-description = "Fire up the terra engines"
-date = 2021-04-10
-weight = 20
-draft = false
-+++
+---
+title: "Terraform-Validator-04: Run Full Node"
+description: "Fire up the terra engines"
+date: 2021-04-10
+draft: false
+tags:
+  - terra
+---
 
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 You should already be `terrauser` here... (`sudo su - terrauser`)
 

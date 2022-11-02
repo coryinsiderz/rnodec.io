@@ -1,10 +1,13 @@
-+++
-title = "Terraform-Validator05: Register Validator"
-description = "How to join the node to the network as an official validator"
-date = 2021-04-11
-weight = 20
-draft = false
-+++
+---
+title: "Terraform-Validator05: Register Validator"
+description: "How to join the node to the network as an official validator"
+date: 2021-04-11
+draft: false
+tags:
+  - terra
+---
+
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 Once your validator and sentries are alive and well, you can submit a simple transaction to the protocol to signal to the network that one of your full nodes (your validator) is officially joining as an actual Validator.  
 

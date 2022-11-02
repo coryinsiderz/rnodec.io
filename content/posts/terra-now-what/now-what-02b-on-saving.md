@@ -1,10 +1,13 @@
-+++ 
-title = "On Saving (part b)" 
-description = "Getting started in the Terra ecosystem part 2b" 
-date = 2021-05-05
-weight = 20 
-draft = false 
-+++
+--- 
+title: "On Saving (part b)" 
+description: "Getting started in the Terra ecosystem part 2b" 
+date: 2021-05-05
+draft: false 
+tags:
+  - terra
+---
+
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 So you got some 🥩 cooking with a few worthy Terra Station validators. You got some of your extra `LUNA` in Anchor [bonded] ({{< relref "now-what-02a-on-saving.md" >}}), provided as collateral, and you have borrowed `UST` against it.  Now you got some `UST` burning a hole in your proverbial pocket.  What can you do with it?
 

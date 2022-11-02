@@ -1,10 +1,13 @@
-+++
-title = "Terraform-Validator-01: Get Chaindata"
-description = "How to download quicksync chain"
-date = 2021-04-07
-weight = 20
-draft = false
-+++
+---
+title: "Terraform-Validator-01: Get Chaindata"
+description: "How to download quicksync chain"
+date: 2021-04-07
+draft: false
+tags:
+  - terra
+---
+
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 It is no fun to wait for a node to catch up to the latest block height from scratch.  Fortunately, the folks at chainlayer.io provide quicksync files to skip the line and catch up much quicker.
 

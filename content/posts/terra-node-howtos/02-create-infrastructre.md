@@ -1,12 +1,13 @@
-+++
-title = "Terraform-Validator-02: Infrastructure"
-description = "Setup required for infrastructure-as-code"
-date = 2021-04-08
-weight = 20
-draft = false
-+++
+---
+title: "Terraform-Validator-02: Infrastructure"
+description: "Setup required for infrastructure-as-code"
+date: 2021-04-08
+draft: false
+tags:
+  - terra
+---
 
-
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 `terraform` (not to be confused with Terraform Labs) is a great way to manage infrastructure on the cloud. 
 

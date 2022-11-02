@@ -1,12 +1,13 @@
+--- 
+title: "What is Terra" 
+description: "A helicopter tour of the Terra project and why it matters to you" 
+date: 2021-04-25
+draft: false 
+tags:
+  - terra
+---
 
-+++ 
-title = "What is Terra" 
-description = "A helicopter tour of the Terra project and why it matters to you" 
-date = 2021-04-25
-weight = 20 
-draft = false 
-+++
-
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 Terra is an exciting young project aimed at bringing crypto to the masses.  To accomplish this high level goal, Terraform Labs are developing an entire ecosystem of interconnected financial platforms simultaneously.  This includes:
 

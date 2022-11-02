@@ -1,11 +1,13 @@
-+++
-title = "Terraform-Validator06: Oracle Server"
-description = "Configure and run the oracle daemons"
-date = 2021-04-11
-weight = 20
-draft = false
-+++
+---
+title: "Terraform-Validator06: Oracle Server"
+description: "Configure and run the oracle daemons"
+date: 2021-04-11
+draft: false
+tags:
+  - terra
+---
 
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 ## Create oracle wallet
 Do this from a local client, not this oracle machine.  You want to protect these keys like you would any other.  

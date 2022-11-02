@@ -1,11 +1,13 @@
-+++
-title = "Terraform-Validator07: Create KMS Key"
-description = "Google Cloud KMS Keys for encryption"
-date = 2021-04-11
-weight = 20
-draft = false
-+++
+---
+title: "Terraform-Validator07: Create KMS Key"
+description: "Google Cloud KMS Keys for encryption"
+date: 2021-04-11
+draft: false
+tags:
+  - terra
+---
 
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 A Google Cloud KMS Key is a secure encyption key stored in your secure google keyring.  KMS Keys can be used for encrypting data at rest such as disks and secrets.  
 

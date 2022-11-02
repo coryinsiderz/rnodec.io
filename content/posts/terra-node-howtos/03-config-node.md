@@ -1,13 +1,15 @@
-+++
-title = "Terraform-Validator-03: Create Full Node"
-description = "How to configure and run a terraform full node"
-date = 2021-04-09
-weight = 20
-draft = false
-+++
+---
+title: "Terraform-Validator-03: Create Full Node"
+description: "How to configure and run a terraform full node"
+date: 2021-04-09
+draft: false
+tags:
+  - terra
+---
+
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 Whether this machine is a Validator or just a sentry, the setup is mostly common.
-
 
 ## Create terrauser
 ```bash

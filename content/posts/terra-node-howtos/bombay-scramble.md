@@ -1,10 +1,13 @@
-+++ 
-title = "Bombay Scramble" 
-description = "Script used to get up and running on new bombay testnet" 
-date = 2021-05-27
-weight = 20 
-draft = false 
-+++
+--- 
+title: "Bombay Scramble" 
+description: "Script used to get up and running on new bombay testnet" 
+date: 2021-05-27
+draft: false 
+tags:
+  - terra
+---
+
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 Terra recently released the ***bombay*** network as a testing ground ahead of the much anticipated upgrade from ***columbus-4*** to ***columbus-5*** mainnet.  What follows here is the steps we took to setup a brand new node from scratch on this network.  Usually we would use our [ansible scripts](https://github.com/RnodeC/terra-git/tree/master/terra-ble) to provision a new machine on the terra network, but there are many new wrinkles and features here, so we set this validator node up by hand.  
 

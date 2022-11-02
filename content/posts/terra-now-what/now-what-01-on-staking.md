@@ -1,10 +1,13 @@
-+++ 
-title = "On Staking" 
-description = "Getting started in the Terra ecosystem part 1" 
-date = 2021-04-27
-weight = 20 
-draft = false 
-+++
+--- 
+title: "On Staking" 
+description: "Getting started in the Terra ecosystem part 1" 
+date: 2021-04-27
+draft: false 
+tags:
+  - terra
+---
+
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 ## Ok I'm in, now what?
 

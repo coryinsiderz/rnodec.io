@@ -1,10 +1,13 @@
-+++ 
-title = "On Investing (part a)" 
-description = "Getting started in the Terra ecosystem part 3a" 
-date = 2021-05-18
-weight = 20 
-draft = false 
-+++
+--- 
+title: "On Investing (part a)" 
+description: "Getting started in the Terra ecosystem part 3a" 
+date: 2021-05-18
+draft: false 
+tags:
+  - terra
+---
+
+***SPECIAL NOTICE:  TERRA HAS FALLEN***
 
 # Takes money to make money
 
