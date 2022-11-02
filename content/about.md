@@ -1,6 +1,5 @@
 ---
-title: About
-date: 2022-10-22 
+showdate: false
 ---
 
 ## What does RnodeC do?

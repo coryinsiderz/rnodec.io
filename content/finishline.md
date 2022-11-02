@@ -1,7 +1,5 @@
 ---
-title: "Finishline"
-date: 2022-10-26
-draft: true
+showdate: false
 ---
 
 No such thing

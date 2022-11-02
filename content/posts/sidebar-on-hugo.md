@@ -1,10 +1,10 @@
 ---
 title: "Sidebar on Hugo"
-date: 2022-10-21T23:16:07-04:00
+date: 2022-10-21
 draft: false
 ---
 
-# Our website
+# Our Website
 
 Is created with hugo, leveraging a hugo theme called [ficurinia](https://gitlab.com/gabmus/hugo-ficurinia).  Tip the man.  This is what I know after a lowest-touch-possible approach of learning how to use hugo / how hugo works.  
 
@@ -12,9 +12,9 @@ Is created with hugo, leveraging a hugo theme called [ficurinia](https://gitlab.
 
 hugo is a cli tool for generating "static websites."  Meaning, there is a standard defined structure that a website directory can take, which will, in a single command, convert it from a nicely organized (relatively) structure to the full on complex web of ugly `.html` and `.xml` and `.css` etc files that comprise what the web server actually serves.   
 
-Once you initialize a new website (`hugo new site rnodec.io`) in a new directory (`cd rnodec.io; git init`), hugo **themes** provide a beatiful, functional, and easily customizable website ootb by just connecting your [desired theme](https://themes.gohugo.io) as a git submodule in your `./themes` directory. Make no mistake though - the distance between starting point of a barebones hugo site and a full fledged theme is a marathon.  One does not have to know how to build a theme in order to use a theme.  
+## Start Line
 
-## What you generally need to do to start 
+Once you initialize a new website (`hugo new site rnodec.io`) in a new directory (`cd rnodec.io; git init`), hugo **themes** provide a beatiful, functional, and easily customizable website ootb by just connecting your [desired theme](https://themes.gohugo.io) as a git submodule in your `./themes` directory. Make no mistake though - the distance between starting point of a barebones hugo site and a full fledged theme is a marathon.  One does not have to know how to build a theme in order to use a theme.  
 
 Initialize the themes' repo into your repo as a git submodule:
 ```
@@ -33,20 +33,19 @@ hugo server -D
 ```
 ...and you can access your website at localhost:1313.  (yea, don't forget you need to install hugo)
 
-Now, you really dig into that themes' doc in order to start customizing the site to fit your needs.  
+This is the plain default starting point for the theme.  Now, you really dig into that themes' doc in order to start customizing the site to fit your needs.  
 
 ## Understanding the mess
 
 Yeah the directories and files you see here are still messy and confusing to a non web developer like me.  But here's my mental model:
 
 * First of all remember, the whole idea here is to build a static site from go templates
-* What you see on your browser at any given time is an html file
-* How that particular html file got created always starts in `themes/*your-theme*/layouts/_defaults/baseof.html`.  Or something like that.  But that `baseof.html` file is very important.  
-* It has access to some context provided to it at *hugo build time*.  I believe most but not all of this context comes from `config.toml`.  hugo reads this file in as a data structure and uses it everywhere.  
+* What you see on the browser at any given time is an html file
+* How that particular html file got created always starts in `themes/*your-theme*/layouts/_defaults/baseof.html`
+* It has access to some context provided to it at *hugo build time*.  Much of this context comes from `config.toml`.  hugo reads this file in as a data structure and uses it everywhere.  
 * `config.toml` is where you tell hugo which theme to use, along with provide all inputs to the theme itself.  
-* I think hugo also grabs some context from the "frontof matter* in your content files.  This is like hugo-specific (theme defined) metadata that you prepend all your content files with.  
+* hugo also grabs some context from the "frontof matter* in your content files.  This is like hugo-specific (theme defined) metadata that you prepend all your content files with.  
 * Content files, in the case of a blog site like this (this is not a blog site; just a site with some blogs) can just be standard markdown documents.  hugo handles making sure this renders the markdown in the browser in html format (preserving site headers, footers, style, etc).  (note that all you had to do here is create the content)
-* How the site knows which of it's layouts to use for any given "section" of the website (`rnodec.io/posts`, `rnodec.io/about`, etc) is... tricky
 * Notice that you have in your top level website dir a completely empty replica of the directory structure in the theme itself (`archetypes`, `content`, `layouts`, etc... these are the standard directories hugo expects to find).  You can override any file from the theme by just creating your own in it's place.  (or copying up the themes' version and making edits)
 
 
@@ -62,7 +61,7 @@ No such thing
 EOF
 ```
 
-Now (after your website re-renders automatically (if you are running hugo server with `--disableFastRender`, hugo will completely rebuild the entire site for you on every change)), you go to `rnodec.io:1313/finishline` in your browser and voila, you have a new section.  But how is that getting rendered exactly?  
+Now (after your website re-renders automatically (if you are running hugo server with `--disableFastRender`, hugo will completely rebuild the entire site for you on every change)), you go to `localhost:1313/finishline` in your browser and voila, you have a new section.  But how is that getting rendered exactly?  
 
 Time to start with `baseof`.  Look at your themes' `/layouts/_defaults/baseof.html` file.  Notice all the `{{` and `}}` characters.  These denote go templates.  Inside these braces are functions and scripts that hugo is processing to replace those `{{ }}` placeholders with actual processed html code (hugo is written in go). The html that you see when you "inspect page source."  This `baseof.html` file reads in other similar go-templatted `.html` files, executes all aforementioned go scripts, and ultimately generate based on the input.  This chain can be complex, but you should be able to follow it if necessary.  
 
@@ -70,7 +69,21 @@ At the heart of that `baseof.html` file is a block of code that looks like this:
 ```go
     {{- block "main" . }}{{- end }}
 ```
-Somehow, this gets connected to another `.html` file.  I am assuming it is based on the request.  `index.html` for example, is definitely getting executed when the user goes to the root of the website. 
+Somehow, this block gets connected to another `.html` file.  There are a bunch of `*.html` files in the `layouts/` dir of the theme.  Which one hugo chooses to insert in that placeholder block depends on the request, and hugo is very "opinionated" about this.  See here for the lookup order that hugo follows:  https://gohugo.io/templates/lookup-order/ 
+
+In the case of this new "/finishline" section, the order would be:  
+
+`layouts/_default/baseof.html` -> `layouts/_default/single.html` -> `layouts/partials/single-post.html` ... you would look into `single-post.html` if you wanted to see how the `content/finishline.md` file got translated into the html version that the browser ultimately sees.  This is the flow that any page on the site will most likely take.  These are very default/magic files.  The `single.html` file is what hugo will fall back to if it can't find anything more suitable/explicit.  
+
+> *remember this is all specific to this theme that I am using, as it's my only experience with hugo, but this should be a pretty standard pattern for hugo in general*
+
+If I wanted to override how any of these pages render, I could make copies of those files and place them in my own `layouts/` dir.  No thanks for now though... 
+
+If I wanted a new menu icon to show up linking to this page, I could achieve that in `config.toml` (just the doc of your theme...).  A good theme like this one should be pretty painless to work with.  
+
+## Custom Home
+
+I do, however, want a custom home page.  To do this, I simply copied up `layouts/index.html` from the theme, and made it my own.  
 
 ## Adding Discord Icon
 
@@ -94,9 +107,11 @@ discord: "&#xfb6e;"
 ```
 And added the section in the "menu.icons" section of `config.toml`, and we now have a discord icon.  
 
+And as a good citizen, [submit a pr to upstream project](https://gitlab.com/gabmus/hugo-ficurinia/-/merge_requests/6) to include this icon by default.
+
 # Conclusion
 
-In conclusion, hugo is cool.  But moving on. 
+In conclusion, hugo is cool.  But moving on... 
 
 # Netlify FYI
 
