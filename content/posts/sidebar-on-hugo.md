@@ -25,7 +25,7 @@ Copy up the example `config.toml` that they gave you:
 cp themes/hugo-ficurinia/exampleSite/config.toml .
 ```
 
-**Important Note - these themes to choose from all will vary widely in how well they work, their intent and functionality, their bells and whistles, how they are configured and customized, how well they are doc-ed, and how supported they still are.  Choose wisely**
+**Important Note - these themes to choose from all will vary widely in how well they work, their intent and functionality, their bells and whistles, how they are configured and customized, how well they are doc-ed, and how supported they still are.  Choose wisely.**
 
 Once you are there, assuming you have a suitable local host available, is run:
 ```bash
@@ -33,9 +33,9 @@ hugo server -D
 ```
 ...and you can access your website at localhost:1313.  (yea, don't forget you need to install hugo)
 
-This is the plain default starting point for the theme.  Now, you really dig into that themes' doc in order to start customizing the site to fit your needs.  
+This is the plain default starting point for the theme.  Now, you really just need to dig into that themes' doc in order to start customizing the site to fit your needs.  
 
-## Understanding the mess
+## Understanding the Mess
 
 Yeah the directories and files you see here are still messy and confusing to a non web developer like me.  But here's my mental model:
 
@@ -43,8 +43,8 @@ Yeah the directories and files you see here are still messy and confusing to a n
 * What you see on the browser at any given time is an html file
 * How that particular html file got created always starts in `themes/*your-theme*/layouts/_defaults/baseof.html`
 * It has access to some context provided to it at *hugo build time*.  Much of this context comes from `config.toml`.  hugo reads this file in as a data structure and uses it everywhere.  
-* `config.toml` is where you tell hugo which theme to use, along with provide all inputs to the theme itself.  
-* hugo also grabs some context from the "frontof matter* in your content files.  This is like hugo-specific (theme defined) metadata that you prepend all your content files with.  
+  * `config.toml` is where you tell hugo which theme to use, along with provide all inputs to the theme itself.  
+* hugo also grabs some context from the "frontof matter" in your content files.  This is like hugo-specific (theme defined) metadata that you prepend all your content files with.  
 * Content files, in the case of a blog site like this (this is not a blog site; just a site with some blogs) can just be standard markdown documents.  hugo handles making sure this renders the markdown in the browser in html format (preserving site headers, footers, style, etc).  (note that all you had to do here is create the content)
 * Notice that you have in your top level website dir a completely empty replica of the directory structure in the theme itself (`archetypes`, `content`, `layouts`, etc... these are the standard directories hugo expects to find).  You can override any file from the theme by just creating your own in it's place.  (or copying up the themes' version and making edits)
 
@@ -113,6 +113,6 @@ And as a good citizen, [submit a pr to upstream project](https://gitlab.com/gabm
 
 In conclusion, hugo is cool.  But moving on... 
 
-# Netlify FYI
+# Netlify 
 
-Is one way really nice hosting option for your website.  You create an account, connect it to your github account/repository, and it builds and publishes your website straight from source.  You can register a domain here too.  Publish test sites from branches of your repo, just a merge to your main branch publishes the new content.  
+Is one way really nice hosting option for your website FYI.  You create an account, connect it to your github account/repository, and it builds and publishes your website straight from source.  You can register a domain here too.  Publish test sites from branches of your repo, just a merge to your main branch publishes the new content.  
