@@ -113,6 +113,6 @@ And as a good citizen, [submit a pr to upstream project](https://gitlab.com/gabm
 
 In conclusion, hugo is cool.  But moving on... 
 
-# Netlify FYI
+# Netlify 
 
-Is one way really nice hosting option for your website.  You create an account, connect it to your github account/repository, and it builds and publishes your website straight from source.  You can register a domain here too.  Publish test sites from branches of your repo, just a merge to your main branch publishes the new content.  
+Is one way really nice hosting option for your website FYI.  You create an account, connect it to your github account/repository, and it builds and publishes your website straight from source.  You can register a domain here too.  Publish test sites from branches of your repo, just a merge to your main branch publishes the new content.  
